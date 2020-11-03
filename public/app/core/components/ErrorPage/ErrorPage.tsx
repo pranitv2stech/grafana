@@ -43,29 +43,23 @@ export class ErrorPage extends PureComponent<Props> {
                 </div>
               </div>
               <div className="error-column info-box">
-                <div className="error-row current-box">
-                  <p className="current-text">current</p>
-                </div>
                 <div className="error-row" style={{ flex: 1 }}>
                   <Icon name="minus-circle" className="error-minus" />
                   <div className="error-column error-space-between error-full-width">
-                    <div className="error-row error-space-between">
-                      <p>Chances you are on the page you are looking for.</p>
-                      <p className="left-margin">0%</p>
+                    <div>
+                      <h3>Don't Worry</h3>
+                      <p>
+                        Let's try to get you back on track:{' '}
+                        <a href={config.appSubUrl} className="error-link">
+                          Home
+                        </a>
+                      </p>
                     </div>
                     <div>
-                      <h3>Sorry for the inconvenience</h3>
                       <p>
-                        Please go back to your{' '}
-                        <a href={config.appSubUrl} className="error-link">
-                          home dashboard
-                        </a>{' '}
-                        and try again.
-                      </p>
-                      <p>
-                        If the error persists, seek help on the{' '}
+                        You may also wish to seek help of our{' '}
                         <a href="https://community.grafana.com" target="_blank" className="error-link">
-                          community site
+                          community members
                         </a>
                         .
                       </p>
